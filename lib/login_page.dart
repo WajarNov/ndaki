@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
+import 'register_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -28,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
               Container(
-                padding: EdgeInsets.all(50),
+                padding: EdgeInsets.all(10),
                 child: Image.asset(
                   'assets/keyboard.jpg',
                   scale: 3,
@@ -49,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
       child: Column(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(5),
             child: TextFormField(
               controller: emailController,
               keyboardType: TextInputType.emailAddress,
@@ -72,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(5),
             child: TextFormField(
               controller: passwordController,
               obscureText: true,
@@ -137,7 +138,7 @@ class _LoginPageState extends State<LoginPage> {
             padding: EdgeInsets.all(10),
             child: ElevatedButton(
               child: Text(
-                'Buat akun',
+                'Register',
                 style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
